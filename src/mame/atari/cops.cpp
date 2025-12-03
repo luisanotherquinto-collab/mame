@@ -802,7 +802,11 @@ ROM_START( cops )
 
 	DISK_REGION( "laserdisc" )
 	DISK_IMAGE_READONLY( "copsld", 0, SHA1(b903477d6b5a87581fe7f1a509aef05165f507e9) )
-	ROM_END
+	
+    ROM_REGION( 0x2000, "nvram", 0 )
+	ROM_LOAD( "default_nvram", 0x0000, 0x2000, CRC(8a422121) SHA1 (3f05f7b4c8b9627fdf34cb25d3e1d2d587ae3b30) )
+
+    ROM_END
 
 ROM_START( copsuk )
 	ROM_REGION( 0x8000, "program", 0 )
@@ -822,7 +826,11 @@ Original file line number	Diff line number	Diff line change
 
 	DISK_REGION( "laserdisc" )
 	DISK_IMAGE_READONLY( "copsld", 0, SHA1(b903477d6b5a87581fe7f1a509aef05165f507e9) )
-ROM_END
+    
+	ROM_REGION( 0x2000, "nvram", 0 )
+	ROM_LOAD( "default_nvram", 0x0000, 0x2000, CRC(8a422121) SHA1 (3f05f7b4c8b9627fdf34cb25d3e1d2d587ae3b30) )
+	
+	ROM_END
 
 ROM_START( revlatns )
 	ROM_REGION( 0x8000, "program", 0 )
