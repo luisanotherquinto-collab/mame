@@ -797,12 +797,12 @@ ROM_START( cops )
 	ROM_REGION( 0x8000, "system", 0 )
 	ROM_LOAD( "cops_sys.dat", 0x0000, 0x8000, CRC(0060e5d0) SHA1(b8c9f6fde6a315e33fa7946e5d3bb4ea2fbe76a8) )
 
-	DISK_REGION( "audiocd" )
-	DISK_IMAGE_READONLY( "copscd", 0, NO_DUMP )
+   DISK_REGION( "audiocd" )
+	DISK_IMAGE_READONLY( "copscd", 0, SHA1(d4739f50cc6fc9e7dc402f6c23236593c122917f) )
 
 	DISK_REGION( "laserdisc" )
-	DISK_IMAGE_READONLY( "copsld", 0, NO_DUMP )
-ROM_END
+	DISK_IMAGE_READONLY( "copsld", 0, SHA1(b903477d6b5a87581fe7f1a509aef05165f507e9) )
+	ROM_END
 
 ROM_START( copsuk )
 	ROM_REGION( 0x8000, "program", 0 )
@@ -810,12 +810,18 @@ ROM_START( copsuk )
 
 	ROM_REGION( 0x8000, "system", 0 )
 	ROM_LOAD( "cops_sys.dat", 0x0000, 0x8000, CRC(0060e5d0) SHA1(b8c9f6fde6a315e33fa7946e5d3bb4ea2fbe76a8) )
+cops.cpp
+Original file line number	Diff line number	Diff line change
+@@ -796,12 +796,14 @@ ROM_START( cops )
+
+	ROM_REGION( 0x8000, "system", 0 )
+	ROM_LOAD( "cops_sys.dat", 0x0000, 0x8000, CRC(0060e5d0) SHA1(b8c9f6fde6a315e33fa7946e5d3bb4ea2fbe76a8) )
 
 	DISK_REGION( "audiocd" )
-	DISK_IMAGE_READONLY( "copscd", 0, NO_DUMP )
+	DISK_IMAGE_READONLY( "copscd", 0, SHA1(d4739f50cc6fc9e7dc402f6c23236593c122917f) )
 
 	DISK_REGION( "laserdisc" )
-	DISK_IMAGE_READONLY( "copsld", 0, NO_DUMP )
+	DISK_IMAGE_READONLY( "copsld", 0, SHA1(b903477d6b5a87581fe7f1a509aef05165f507e9) )
 ROM_END
 
 ROM_START( revlatns )
